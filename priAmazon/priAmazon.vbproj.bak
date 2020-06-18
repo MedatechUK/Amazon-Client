@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{73ADB6B2-AA29-4B5D-BD40-82D02C5755F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>priAmazon</RootNamespace>
+    <AssemblyName>priAmazon</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Empty</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Program Files %28x86%29\XSDObjectGenerator\amzn-base.xsd">
+      <Link>xsd\amzn-base.xsd</Link>
+    </None>
+    <None Include="C:\Program Files %28x86%29\XSDObjectGenerator\amzn-envelope.xsd">
+      <Link>xsd\amzn-envelope.xsd</Link>
+    </None>
+    <None Include="C:\Program Files %28x86%29\XSDObjectGenerator\amzn-header.xsd">
+      <Link>xsd\amzn-header.xsd</Link>
+    </None>
+    <None Include="xsd\AutoAccessory.xsd" />
+    <None Include="xsd\Beauty.xsd" />
+    <None Include="xsd\CameraPhoto.xsd" />
+    <None Include="xsd\CE.xsd" />
+    <None Include="xsd\ClothingAccessories.xsd" />
+    <None Include="xsd\envtest.xsd" />
+    <None Include="xsd\test.xsd" />
+    <None Include="xsd\FoodAndBeverages.xsd" />
+    <None Include="xsd\Gourmet.xsd" />
+    <None Include="xsd\Health.xsd" />
+    <None Include="xsd\HomeImprovement.xsd" />
+    <None Include="xsd\Inventory.xsd" />
+    <None Include="xsd\Jewelry.xsd" />
+    <None Include="xsd\Lighting.xsd" />
+    <None Include="xsd\MusicalInstruments.xsd" />
+    <None Include="xsd\OrderAcknowledgement.xsd" />
+    <None Include="xsd\OrderAdjustment.xsd" />
+    <None Include="xsd\OrderFulfillment.xsd" />
+    <None Include="xsd\OrderReport.xsd" />
+    <None Include="xsd\Override.xsd" />
+    <None Include="xsd\PetSupplies.xsd" />
+    <None Include="xsd\Price.xsd" />
+    <None Include="xsd\ProcessingReport.xsd" />
+    <None Include="xsd\Product.xsd" />
+    <None Include="xsd\ProductClothing.xsd" />
+    <None Include="xsd\ProductImage.xsd" />
+    <None Include="xsd\Relationship.xsd" />
+    <None Include="xsd\SettlementReport.xsd" />
+    <None Include="xsd\Sports.xsd" />
+    <None Include="xsd\TiresAndWheels.xsd" />
+    <None Include="xsd\Tools.xsd" />
+    <None Include="xsd\ToysBaby.xsd" />
+    <None Include="xsd\Wireless.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Amazon.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xsd:element name="Address" type="AddressType"/>
+  
+	<xsd:complexType name="AddressType">
+		<xsd:sequence>
+			<xsd:element name="Name" />
+			<xsd:element name="FormalTitle" minOccurs="0">
+
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:normalizedString">
+						<xsd:maxLength value="10"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="GivenName"  minOccurs="0">
+
+			</xsd:element>
+			<xsd:element name="FamilyName"  minOccurs="0">
+			</xsd:element>
+			<xsd:element name="AddressFieldOne" type="AddressLine"/>
+			<xsd:element name="AddressFieldTwo" type="AddressLine" minOccurs="0"/>
+			<xsd:element name="AddressFieldThree" type="AddressLine" minOccurs="0"/>
+			<xsd:element name="City"  minOccurs="0"/>
+			<xsd:element name="County"  minOccurs="0"/>
+			<xsd:element name="StateOrRegion"  minOccurs="0"/>
+			<xsd:element name="PostalCode"  minOccurs="0"/>
+			<xsd:element name="CountryCode">
+			</xsd:element>			
+			<xsd:element name="isDefaultShipping" type="xsd:boolean" minOccurs="0">
+			</xsd:element>
+			<xsd:element name="isDefaultBilling" type="xsd:boolean" minOccurs="0">
+
+			</xsd:element>
+			<xsd:element name="isDefaultOneClick" type="xsd:boolean" minOccurs="0">
+
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+  <xsd:simpleType name="AddressLine">
+    <xsd:restriction base="xsd:normalizedString">
+      <xsd:maxLength value="60"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  
+</xsd:schema>
+
